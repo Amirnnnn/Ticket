@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("../assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf") format('truetype');
+}
+
+body{
+    min-height: 100vh;
+    background:
+        url("../assets/images/pattern-squiggly-line-top.svg") top right / 28rem auto no-repeat,
+        url("../assets/images/pattern-squiggly-line-bottom-desktop.svg") bottom left / 50rem auto no-repeat,
+        url("../assets/images/pattern-lines.svg") top center / cover no-repeat,
+        url("../assets/images/background-desktop.png") center / cover no-repeat;
+    color: #fff;
+    font-family: "Inconsolata", monospace;
+}
+
+/* ***********************   nav bar  ********************* */
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar-container .logo-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-block: 1rem;
+}

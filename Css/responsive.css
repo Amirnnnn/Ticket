@@ -1,0 +1,152 @@
+.main-container {
+  width: min(100%, 42rem);
+  margin-inline: auto;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+    background-size:
+      18rem auto,
+      30rem auto,
+      cover,
+      cover;
+    background-position:
+      top right,
+      bottom left,
+      top center,
+      center;
+  }
+
+  .nav-bar-container .logo-container {
+    gap: 0.65rem;
+    margin-block: 0.75rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .nav-bar-container .logo-container img {
+    width: 1.7rem;
+  }
+
+  .main-header {
+    gap: 0.65rem;
+    margin: 1.5rem 1rem 2rem;
+  }
+
+  .main-header h2 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+    line-height: 1.05;
+  }
+
+  .main-header p {
+    width: min(100% - 2rem, 22rem);
+    max-width: 22rem;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .ticket-container {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.75rem;
+  }
+
+  .ticket {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .ticket .ticket-header,
+  .ticket .ticket-body {
+    gap: 0.65rem;
+    padding: 0.35rem;
+  }
+
+  .ticket .ticket-header img {
+    width: 2rem;
+  }
+
+  .ticket .ticket-header .ticket-header-text h3,
+  .ticket .ticket-body .ticket-body-text h3 {
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+  }
+
+  .ticket .ticket-header .ticket-header-text p,
+  .ticket .ticket-body .ticket-body-text p {
+    font-size: clamp(0.7rem, 3vw, 0.95rem);
+  }
+
+  .ticket .ticket-body img {
+    width: clamp(2.75rem, 13vw, 4rem);
+    height: clamp(2.75rem, 13vw, 4rem);
+  }
+
+  .upload-label,
+  .upload-container,
+  .upload-instructions,
+  .name-container,
+  .email-container,
+  .github-container,
+  .button-container {
+    width: min(100% - 2rem, 31rem);
+  }
+
+  .upload-container {
+    min-height: 7.5rem;
+  }
+
+  .upload-instructions {
+    align-items: flex-start;
+    line-height: 1.25;
+  }
+
+  .name-container,
+  .email-container,
+  .github-container,
+  .button-container {
+    margin-block: 1.35rem;
+  }
+
+  .name-container::after {
+    display: none;
+  }
+
+  .name-container input,
+  .email-container input,
+  .github-container input,
+  .button-container button {
+    min-height: 3.25rem;
+    font: inherit;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-header h2 {
+    font-size: 1.85rem;
+  }
+
+  .main-header p {
+    width: calc(100% - 1.5rem);
+  }
+
+  .ticket {
+    padding: 0.55rem;
+  }
+
+  .ticket .ticket-header .ticket-header-text h3,
+  .ticket .ticket-body .ticket-body-text h3 {
+    font-size: 1rem;
+  }
+
+  .upload-label,
+  .upload-container,
+  .upload-instructions,
+  .name-container,
+  .email-container,
+  .github-container,
+  .button-container {
+    width: calc(100% - 1.5rem);
+  }
+}

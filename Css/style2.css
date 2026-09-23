@@ -1,0 +1,108 @@
+/* ***********************   main header  ********************* */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+.main-header h2 {
+  font-size: 3rem;
+}
+
+.main-header h3 {
+  font-size: 2.5rem;
+}
+
+.main-header #name-html {
+  background: linear-gradient(90deg, #e85d4b, #f6c380);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-header p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  line-height: 1.35;
+  font-size: 1.2rem;
+  color: #a3a3a3;
+}
+
+.main-header p span {
+  background: linear-gradient(90deg, #e85d4b, #f6c380);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+/* ***********************   Ticket  ********************* */
+
+.ticket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block: 2rem;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.ticket {
+  width: min(100%, 480px);
+  aspect-ratio: 600 / 280;
+  background: url("../assets/images/pattern-ticket.svg") center / 100% 100%
+    no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* ********   ticket header ******* */
+.ticket .ticket-header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.ticket .ticket-header .ticket-header-text h3 {
+  font-size: 2rem;
+}
+
+.ticket .ticket-header .ticket-header-text p {
+  font-size: 1rem;
+  color: #a3a3a3;
+}
+
+/* ********   ticket body ******* */
+.ticket .ticket-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.ticket .ticket-body .ticket-body-text h3 {
+  font-size: 2rem;
+}
+
+.ticket .ticket-body .ticket-body-text p {
+  font-size: 1rem;
+  color: #a3a3a3;
+}
+
+.ticket .ticket-body img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}

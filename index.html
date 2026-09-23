@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/common.css" />
+    <link rel="stylesheet" href="./Css/styles.css" />
+    <link rel="stylesheet" href="./Css/responsive.css" />
+    <title>Ticket</title>
+  </head>
+  <body>
+    <header>
+      <!-- **********  nav header  ********* -->
+      <nav class="nav-bar-container">
+        <div class="logo-container">
+          <img src="./assets/images/logo-mark.svg" alt="logo-mark" />
+          <h2>Coding Conf</h2>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <!-- **********  main head  ********* -->
+      <div class="main-header">
+        <h2>Your Journey to Coding Conf</h2>
+        <h2>2025 Starts Here!</h2>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+      </div>
+
+      <form id="ticket-form">
+        <!-- **********  upload  ********* -->
+        <div class="upload-container" id="upload-container">
+          <input
+            type="file"
+            id="avatar-upload"
+            accept=".jpg,.jpeg,.png"
+            hidden
+          />
+          <img src="./assets/images/icon-upload.svg" alt="" id="upload-icon" />
+          <p id="upload-text">Drag and drop or click to upload</p>
+          <img src="" alt="avatar preview" id="avatar-preview" hidden />
+        </div>
+
+        <!-- **********  upload instructions ********* -->
+        <div class="upload-instructions">
+          <img src="./assets/images/icon-info.svg" alt="info" />
+          <p>Upload your photo (JPG, PNG, max size : 500KB)</p>
+        </div>
+
+        <!-- **********  Name box  ********* -->
+        <div class="name-container">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- **********  Email box  ********* -->
+        <div class="email-container">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="example@email.com"
+          />
+        </div>
+
+        <!-- **********  Github box  ********* -->
+        <div class="github-container">
+          <label for="github">GitHub Username</label>
+          <input
+            type="text"
+            id="github"
+            name="github"
+            required
+            placeholder="your-github-username"
+          />
+        </div>
+
+        <!-- **********  Generate ticket button  ********* -->
+        <div class="button-container">
+          <button type="submit">Generate My Ticket</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="./Js/app.js"></script>
+  </body>
+</html>
